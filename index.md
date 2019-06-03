@@ -43,7 +43,8 @@ GND：接入树莓派39口。（PS：本次例子我买了一包电阻，所以G
 
 ![运行结果](http://upload-images.jianshu.io/upload_images/6753590-e1a84f324d1921de.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ## 关键代码
-``` package com.yan.hongwai;
+```
+package com.yan.hongwai;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -115,5 +116,5 @@ public class MainActivity extends Activity {
         }
         mInputGpio.unregisterGpioCallback(mGpioCallback);
     }
-}
+} 
 ```
