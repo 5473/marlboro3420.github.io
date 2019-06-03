@@ -2,7 +2,7 @@
 在上一篇[树莓派Android Things使用超声波测距模块HC-SR04](http://www.jianshu.com/p/9a6b059e0d79)文章中，简单的介绍了超声波模块的使用，本篇介绍下人体红外感应模块HC-SR501在刷入了Android Things的树莓派中的使用方法。由于上一篇已经介绍了树莓派和Android Things的基本信息，本篇将不再赘述，直接提供接线方法和代码，如果你没有基本的树莓派运行环境，建议看一下上一篇了解下。
 # 操作步骤
 ## 准备以下物品
-###### 硬件
+#### 硬件
 - 树莓派 * 1（假定是一个可以启动的树莓派，包含电源线、8G以上的TF卡，已经刷入了Android Things。没有刷入的看[官方操作方法，包含（Linux、Mac、Windows）](https://developer.android.google.cn/things/hardware/raspberrypi.html)刷入即可）
 - 杜邦线 若干
 - HC-SR501人体感应模块 * 1
@@ -16,7 +16,7 @@ HC-SR501人体感应模块一共有三个针脚，比超声波测距少了一个
 VCC：电源（Volt Current Condenser） 接树莓派5v电源即可。
 OUT：输出针脚，当传感器收到感应时，从此针脚输出数据。
 GND：接地线，接树莓派的Ground口即可。
-###### 软件环境
+#### 软件环境
 - Android Things 系统镜像（[官网下载](https://developer.android.google.cn/things/preview/download.html)，选择Raspberry Pi的镜像）
 - Android Studio
 # 将HC-SR501和树莓派连接起来
@@ -43,7 +43,7 @@ GND：接入树莓派39口。（PS：本次例子我买了一包电阻，所以G
 
 ![运行结果](http://upload-images.jianshu.io/upload_images/6753590-e1a84f324d1921de.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ## 关键代码
-```package com.yan.hongwai;
+``` package com.yan.hongwai;
 
 import android.app.Activity;
 import android.os.Bundle;
